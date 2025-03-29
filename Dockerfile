@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Bygg med Maven (skipper tester for raskere build)
-RUN ./mvnw clean package -DskipTests
+RUN src/mvnw clean package -DskipTests
 
 # Start appen med .jar-filen som ble bygd
 CMD ["java", "-jar", "target/*.jar"]
