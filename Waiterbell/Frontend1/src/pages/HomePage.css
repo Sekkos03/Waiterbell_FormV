@@ -424,7 +424,7 @@
 .why-choose-text {
   flex: 1;
   padding: 0 20px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 
@@ -455,7 +455,7 @@
   .waiter-bell-titleTO,
 .waiter-bell-titleEN{
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 1.8rem;
 }
 
@@ -476,7 +476,7 @@ A .contact-title {
 
 .contact-item {
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .contact-item h3 {
@@ -506,6 +506,7 @@ A .contact-title {
 
   .contact-item h3 {
     font-size: 1.5rem;
+
   }
 
   .contact-item p {
@@ -514,5 +515,13 @@ A .contact-title {
 
   .contact-logo-img {
     width: 290px;
+  }
+
+  .contact-section {
+    background-color: #0d1015;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    margin-top: -50px;
   }
 }
