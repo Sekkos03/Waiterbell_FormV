@@ -5,7 +5,7 @@ FROM eclipse-temurin:17-jdk
 WORKDIR /app
 
 # Kopier hele prosjektet inn i containeren
-COPY src/ .
+COPY backend/ .
 
 # Bygg med Maven (skipper tester for raskere build)
 RUN ./mvnw clean package -DskipTests
