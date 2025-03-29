@@ -200,10 +200,14 @@ html {
     }
     .logo-container {
       transform: scale(1.6);
-      margin-left: 120px;
+      margin: 0 auto;              /* Sentrer horisontalt */
+      display: flex;
+      justify-content: center;
+      align-items: center;
       white-space: normal;
       margin-bottom: 10px;
     }
+    
   
     .form-container {
       margin: 0;
