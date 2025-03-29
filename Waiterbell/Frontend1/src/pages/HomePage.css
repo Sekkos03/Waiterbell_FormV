@@ -1,0 +1,487 @@
+/* HomePage.css */
+
+.homepage-container {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: url("../asset/restaurant-ordering.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 1;
+  color: #d4af7a;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-top: 300px;
+}
+
+.hero p {
+  position: relative;
+  z-index: 1;
+  color: #d4af7a;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  margin-bottom: px;
+  margin-top: 340px;
+}
+
+.hero button {
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border-radius: 50px;
+  background-color: #d4af7a;
+  color: black;
+  font-weight: bold;
+  border: none;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.hero button:hover {
+  background-color: #c29b6c;
+  transform: scale(1.05);
+}
+
+@media (max-width: 968px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+  .hero button {
+    margin-bottom: 60px;
+  }
+}
+/* SlikFungerer.css */
+.slik-fungerer {
+  background-color: #0d1117;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Hovedlayout */
+.functionality-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Venstre og høyre bilder */
+.left-images,
+.right-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  transform: scale(1.3); /* 50% of the original size */
+  transform-origin: center; /* Ensures it scales from the center */
+}
+
+.feature-image {
+  width: 90%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+/* Midten - Tekst */
+.middle-text {
+  flex: 2;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.middle-text h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.middle-text p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Logo i høyresiden */
+.logo-image {
+  width: 1230px;
+}
+
+/* Responsiv design */
+@media (max-width: 1024px) {
+  .functionality-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-images,
+  .right-images {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .middle-text {
+    text-align: center;
+  }
+
+  .feature-image {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .middle-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .middle-text p {
+    font-size: 1rem;
+  }
+
+  .feature-image {
+    width: 70%;
+  }
+}
+
+/* Se Fordeler Seksjon */
+.benefits-section {
+  background-color: #0d1015;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.benefits-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -20px;
+  margin-right: -100px;
+}
+
+.benefits-logo {
+  width: 140px;
+  margin-left: -15px;
+}
+
+.benefit-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.benefit-item {
+  text-align: center;
+  flex: 1;
+  min-width: 280px;
+}
+
+.circle-progress {
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 50%
+  );
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px auto;
+  color: #d4af7a;
+  border: 4px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.request-btn {
+  font-size: 1.3rem;
+  padding: 14px 30px;
+  border-radius: 15px;
+  background-color: #d4af7a;
+  color: black;
+  font-weight: bold;
+  border: none;
+  transition: 0.3s ease-in-out;
+  margin-top: 40px;
+}
+
+.request-btn:hover {
+  background-color: #c29b6c;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .benefits-title {
+    font-size: 2.2rem;
+  }
+
+  .benefit-container {
+    flex-direction: column;
+  }
+
+  .circle-progress {
+    width: 110px;
+    height: 110px;
+    font-size: 1.5rem;
+  }
+}
+/* Waiter Bell Leverer Til Seksjon */
+.waiter-bell-section {
+  background-color: #0d1015;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.waiter-bell-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -20px;
+  margin-right: -100px;
+}
+.waiter-bell-titleTO {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.waiter-bell-titleEN {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+.waiter-bell-logo {
+  width: 140px;
+  margin-left: -15px;
+}
+
+.category-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.category-item {
+  text-align: center;
+  flex: 1;
+  min-width: 280px;
+}
+
+.category-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.category-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.category-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.category-item li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .waiter-bell-title {
+    font-size: 2.2rem;
+  }
+
+  .category-container {
+    flex-direction: column;
+  }
+
+  .category-image {
+    width: 140px;
+    height: 140px;
+  }
+}
+/* OmOss.css */
+.about-section {
+  background-color: #0d1015;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* "Om oss" og "Hvorfor velge oss" skal være i to kolonner */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
+.about-text,
+.why-choose-text {
+  flex: 1;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+
+
+.about-text p,
+.why-choose-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text,
+  .why-choose-text {
+    text-align: center;
+  }
+
+  .about-logo img {
+    width: 150px;
+  }
+}
+
+/* Kontakt Seksjon */
+.contact-section {
+  background-color: #0d1015;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+A .contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.contact-item {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.contact-item h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.contact-item p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.contact-logo {
+  margin-top: auto;
+}
+
+.contact-logo-img {
+  width: 400px;
+  margin-top: -65px;
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-item p {
+    font-size: 1rem;
+  }
+
+  .contact-logo-img {
+    width: 290px;
+  }
+}

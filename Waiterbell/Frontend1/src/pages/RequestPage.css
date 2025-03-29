@@ -1,0 +1,214 @@
+/* RequestPage.css */
+
+.request-page {
+  height: auto;
+  width: 100%;
+  background-color: #0d1015; /* Eller hva bakgrunnsfargen din er */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.request-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1300px;
+}
+.confirmation-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: 50px;
+}
+
+html {
+  scroll-padding-top: 100px; /* Adjust based on your header height */
+}
+
+.bot {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.email-line {
+  white-space: nowrap;
+}
+
+
+.parent {
+  position: relative;
+  top: -20px; /* Moves it up by 20px */
+  white-space: nowrap;
+}
+
+#omoss {
+  margin-top: -90px;
+}
+
+/* Venstre side - Logo */
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(2.2); /* Mindre skalering */
+  transform-origin: center;
+  margin: 0 auto;
+  margin-left: 1%;
+}
+
+/* Viktig: gjør logoen ikke-klikkbar og usynlig for pekeren */
+.logo-img {
+  width: 180px;
+  margin-right: 0px;
+  pointer-events: none;
+}
+
+
+/* Midtdel - Skjema */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%; /* Sørger for at containeren fyller vertikalt */
+}
+
+
+.form-container h1:first-child {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: -10px;
+}
+
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 320px;
+  margin: auto;
+}
+
+
+.form-container input::placeholder {
+  color: black;
+}
+
+.form-container button {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 50px;
+  background-color: #c29b6c;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.form-container button:hover {
+  background-color: #a88654;
+}
+
+/* Sørg for at inputfeltene alltid har samme farge */
+.form-container input,
+.form-container select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #c29b6c; /* Hold den brun/gul */
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 10px;
+  appearance: none;
+  outline: none;
+}
+
+/* Fjerner hvit farge når input er aktiv (focus) */
+.form-container input:focus,
+.form-container select:focus {
+  background-color: #c29b6c !important; /* Sørg for at den forblir brun */
+  color: black !important;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3); /* Legg til en liten glow-effekt */
+}
+
+
+
+/* Sørg for at dropdown ikke blir for høy */
+.form-container select option {
+  background-color: #c29b6c;
+  color: black;
+  font-size: 1rem;
+}
+
+
+.message {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c29b6c;
+}
+
+/* Høyre side - Slagord */
+.slogan-container {
+  flex: 1;
+  text-align: right;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #c29b6c;
+  margin-left: -70px;
+}
+
+.slogan-container h2 {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 3.9rem;
+}
+
+/* Responsiv design */
+@media (max-width: 1024px) {
+  .request-container {
+    text-align: center;
+  }
+
+  .logo-container {
+    order: -1;
+    margin-bottom: px;
+    transform: scale(2); /* 50% of the original size */
+    transform-origin: center; /* Ensures it scales from the center */
+  }
+
+  .slogan-container {
+    order: 1;
+    text-align: center;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .slogan-container h2 {
+    font-size: 3rem;
+    display: inline-block;
+    margin-left: 10px; 
+  }
+}
