@@ -9,4 +9,4 @@ COPY Waiterbell/ .
 RUN ./mvnw clean package -DskipTests
 
 # Start .jar-filen
-CMD ["java", "-jar", "target/*.jar"]
+CMD ["java", "-jar", "target/WaiterBell-0.0.1-SNAPSHOT.jar"]
