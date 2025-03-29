@@ -2,12 +2,11 @@ FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 
-# Kopier alt fra prosjektets rot (der pom.xml og mvnw ligger)
-COPY . .
+# Kopier innholdet fra Waiterbell-mappen inn i /app
+COPY Waiterbell/ .
 
-# Bygg prosjektet
+# Bygg med Maven
 RUN ./mvnw clean package -DskipTests
 
-# Start appen
+# Start .jar-filen
 CMD ["java", "-jar", "target/*.jar"]
-
