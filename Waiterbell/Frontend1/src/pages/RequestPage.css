@@ -187,28 +187,39 @@ html {
 }
 
 /* Responsiv design */
-@media (max-width: 1024px) {
-  .request-container {
-    text-align: center;
-  }
-
-  .logo-container {
-    order: -1;
-    margin-bottom: px;
-    transform: scale(2); /* 50% of the original size */
-    transform-origin: center; /* Ensures it scales from the center */
-  }
-
-  .slogan-container {
-    order: 1;
-    text-align: center;
-    margin-top: 20px;
-    display: inline-block;
-  }
-
-  .slogan-container h2 {
-    font-size: 3rem;
-    display: inline-block;
-    margin-left: 10px; 
-  }
+@media (max-width: 768px) {
+    .request-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .parent {
+      position: relative;
+      top: -20px;
+      white-space: normal; /* <-- slik at teksten kan brekkes */
+      text-align: center;
+    }
+    .logo-container {
+      transform: scale(1.6);
+      margin-left: 120px;
+      white-space: normal;
+      margin-bottom: 10px;
+    }
+  
+    .form-container {
+      margin: 0;
+      padding: 10px 0;
+    }
+  
+    .slogan-container {
+      font-size: 2.2rem;
+      white-space: normal;
+      margin-top: 20px;
+    }
+  
+    .slogan-container h2 {
+      font-size: 3.7rem;
+      margin: 0;
+      margin-left: 0;
+    }
+    
 }
