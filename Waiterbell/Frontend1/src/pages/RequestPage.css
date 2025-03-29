@@ -192,6 +192,11 @@ html {
       flex-direction: column;
       gap: 20px;
     }
+    .confirmation-container {
+      flex-direction: column;
+      gap: 20px;
+      margin-right: 10px;
+    }
     .parent {
       position: relative;
       top: -20px;
