@@ -374,6 +374,14 @@
     margin-top: -60px;
   }
 
+  .waiter-bell-section {
+    background-color: #0d1015;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    margin-top: -80px;
+  }
+
   .category-container {
     flex-direction: column;
   }
