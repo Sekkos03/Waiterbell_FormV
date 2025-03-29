@@ -5,10 +5,10 @@ FROM eclipse-temurin:17-jdk
 WORKDIR /app
 
 # Kopier hele prosjektet inn i containeren
-COPY . .
+COPY src/ .
 
 # Bygg med Maven (skipper tester for raskere build)
-RUN src/mvnw clean package -DskipTests
+RUN ./mvnw clean package -DskipTests
 
 # Start appen med .jar-filen som ble bygd
 CMD ["java", "-jar", "target/*.jar"]
