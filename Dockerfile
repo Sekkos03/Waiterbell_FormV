@@ -1,14 +1,13 @@
-# Bruk en offisiell Java image
 FROM eclipse-temurin:17-jdk
 
-# Sett arbeidskatalog i containeren
 WORKDIR /app
 
-# Kopier hele prosjektet inn i containeren
-COPY backend/ .
+# Kopier alt fra prosjektets rot (der pom.xml og mvnw ligger)
+COPY . .
 
-# Bygg med Maven (skipper tester for raskere build)
+# Bygg prosjektet
 RUN ./mvnw clean package -DskipTests
 
-# Start appen med .jar-filen som ble bygd
+# Start appen
 CMD ["java", "-jar", "target/*.jar"]
+
