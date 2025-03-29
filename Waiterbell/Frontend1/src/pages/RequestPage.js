@@ -135,7 +135,7 @@ const RequestPage = () => {
 
     setSubmitting(true);
     try {
-      const response = await axios.post("http://localhost:8080/request", {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/request`,{
         ...formData,
         recaptchaToken,
       });
@@ -230,7 +230,7 @@ const RequestPage = () => {
                 <div className="bot">
                 {/* reCAPTCHA-verifisering */}
                 <ReCAPTCHA
-                  sitekey="6LfxO_wqAAAAABrJMwNVEfdM60bGCNgJi6sez5EH"
+                  sitekey="6LesgwMrAAAAAPcu_Rd3jQf2WwTyFNVJ-LmGlA-C"
                   onChange={(token) => setRecaptchaToken(token)}
                 />
                 </div>

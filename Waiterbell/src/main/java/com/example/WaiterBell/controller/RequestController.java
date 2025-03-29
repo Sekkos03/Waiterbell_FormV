@@ -15,7 +15,7 @@ import com.example.WaiterBell.service.MailService;
 
 @RestController
 @RequestMapping("/request")
-@CrossOrigin
+@CrossOrigin(origins = "*")
 public class RequestController {
     @Autowired
     private RequestRepository repository;
