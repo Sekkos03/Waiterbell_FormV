@@ -204,7 +204,7 @@
   font-weight: bold;
   text-align: center;
   margin-bottom: -20px;
-  margin-right: -100px;
+  margin-right: -10px;
 }
 
 .benefits-logo {
@@ -269,6 +269,11 @@
   .benefits-title {
     font-size: 1.8rem;
   }
+  .benefits-section {
+    background-color: #0d1015;
+    color: white;
+    text-align: center;
+  }
 
   .benefit-container {
     flex-direction: column;
@@ -302,13 +307,13 @@
   text-align: center;
   white-space: normal;
   margin-bottom: -20px;
-  margin-right: -100px;
+  margin-right: -10px;
 }
 .waiter-bell-titleTO {
   font-size: 2.8rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .waiter-bell-titleEN {
@@ -377,9 +382,19 @@
   .waiter-bell-section {
     background-color: #0d1015;
     color: white;
-    padding: 80px 0;
+    padding: 70px 0;
     text-align: center;
-    margin-top: -80px;
+    margin-top: -62px;
+    padding-bottom: 30px;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: -10px;
+    
   }
 
   .category-container {
@@ -391,8 +406,8 @@
     height: 140px;
   }
   .category-item {
-    margin-bottom: 40px;
-    padding: 0 20px;
+    margin-bottom: 0px;
+    padding: 0 00px;
   }
   
   .category-item ul {
@@ -417,6 +432,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 00px;
+  
 }
 
 /* "Om oss" og "Hvorfor velge oss" skal være i to kolonner */
@@ -449,6 +466,16 @@
   .about-content {
     flex-direction: column;
     text-align: center;
+
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    
   }
 
   .about-text,
@@ -459,14 +486,27 @@
   .about-logo img {
     width: 150px;
   }
-  .waiter-bell-title,
-  .waiter-bell-titleTO,
-.waiter-bell-titleEN{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 1.8rem;
-}
-
+  .waiter-bell-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: normal;
+    margin-bottom: -20px;
+    margin-right: -100px;
+  }
+  .waiter-bell-titleTO {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .waiter-bell-titleEN {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: -20px;
+  }
 }
 
 /* Kontakt Seksjon */
@@ -475,6 +515,7 @@
   color: white;
   padding: 80px 0;
   text-align: center;
+  margin-top: -70px;
 }
 A .contact-title {
   font-size: 2.5rem;
@@ -485,6 +526,7 @@ A .contact-title {
 .contact-item {
   text-align: center;
   margin-bottom: 10px;
+  
 }
 
 .contact-item h3 {
@@ -514,7 +556,7 @@ A .contact-title {
 
   .contact-item h3 {
     font-size: 1.5rem;
-
+    margin-top: -5px;
   }
 
   .contact-item p {
@@ -530,6 +572,6 @@ A .contact-title {
     color: white;
     padding: 80px 0;
     text-align: center;
-    margin-top: -50px;
+    margin-top: -89px;
   }
 }

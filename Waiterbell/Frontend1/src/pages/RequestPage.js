@@ -257,7 +257,6 @@ const RequestPage = () => {
           <div className="container">
             <h2 className="benefits-title">
               Se fordeler{" "}
-              <img src={Logo_WB_US} alt="Logo" className="benefits-logo" />
             </h2>
             <div className="row mt-5">
               <div className="col-md-4 benefit-item">
@@ -285,13 +284,12 @@ const RequestPage = () => {
         </section>
         {/* Waiter Bell Leverer Til Section */}
         <section
-          className="waiter-bell-section text-center py-5"
+          className="waiter-bell-section text-center py-7"
           id="leverertil"
         >
           <div className="container">
             <h2 className="waiter-bell-title">
               Waiter Bell leverer til{" "}
-              <img src={Logo_WB_US} alt="Logo" className="waiter-bell-logo" />
             </h2>
             <div className="row mt-5">
               <div className="col-md-4 category-item">
@@ -338,7 +336,7 @@ const RequestPage = () => {
               mellom gjester og servitør.
             </p>
             <p>
-              <strong>Mål:</strong> Å gi restauranter, barer og hoteller
+              <strong>Målet</strong> er å gi restauranter, barer og hoteller
               muligheten til å forbedre kundeopplevelsen, øke effektiviteten, og gi gjestene en VIP-opplevelse.
             </p>
             <p><strong>Serviceopplevelsen</strong> er det som får kunden til å komme tilbake!</p>
@@ -361,7 +359,6 @@ const RequestPage = () => {
               <h3>Josef Missoum</h3>
               <p>Salgssjef</p>
               <p>Tlf: +47 929 70 458</p>
-              <p>E-post: josef@waiterbell.no</p>
             </div>
           </div>
           <div className="contact-logo mt-5">
