@@ -230,7 +230,7 @@ const RequestPage = () => {
                 <div className="bot">
                 {/* reCAPTCHA-verifisering */}
                 <ReCAPTCHA
-                  sitekey="6LeOhQMrAAAAAGSxhprV9AfTnyFqT6Y_Ke4MCuvA"
+                  sitekey="6Ld5jgkrAAAAACSI-w2ovqTl-gX5gRToIDWm0HE7"
                   onChange={(token) => setRecaptchaToken(token)}
                 />
                 </div>
