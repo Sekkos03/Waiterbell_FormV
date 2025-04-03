@@ -173,33 +173,32 @@ const RequestPage = () => {
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item">
-              <Link className="nav-links" onClick={scrollToSection4}>
-                Se Fordeler
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-links" onClick={scrollToSection5}>
-                Leverer til
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-links" onClick={scrollToSection1}>
-                Om oss
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-links" onClick={scrollToSection2}>
-                Kontakt
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link className="nav-links" onClick={scrollToSection3}>
-                Be om pris
-              </Link>
-            </li>
-          </ul>
+  <li className="nav-item">
+    <Link className="nav-links" onClick={() => { scrollToSection4(); closeMobileMenu(); }}>
+      Se Fordeler
+    </Link>
+  </li>
+  <li className="nav-item">
+    <Link className="nav-links" onClick={() => { scrollToSection5(); closeMobileMenu(); }}>
+      Leverer til
+    </Link>
+  </li>
+  <li className="nav-item">
+    <Link className="nav-links" onClick={() => { scrollToSection1(); closeMobileMenu(); }}>
+      Om oss
+    </Link>
+  </li>
+  <li className="nav-item">
+    <Link className="nav-links" onClick={() => { scrollToSection2(); closeMobileMenu(); }}>
+      Kontakt
+    </Link>
+  </li>
+  <li className="nav-item">
+    <Link className="nav-links" onClick={() => { scrollToSection3(); closeMobileMenu(); }}>
+      Be om pris
+    </Link>
+  </li>
+</ul>
         </div>
       </nav>
       <div className="parent">

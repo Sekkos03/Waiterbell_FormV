@@ -299,6 +299,7 @@
   color: white;
   padding: 80px 0;
   text-align: center;
+  margin-top: -20px;
 }
 
 .waiter-bell-title {
@@ -492,7 +493,7 @@
     text-align: center;
     white-space: normal;
     margin-bottom: -20px;
-    margin-right: -100px;
+    margin-right: -70px;
   }
   .waiter-bell-titleTO {
     font-size: 1.8rem;
