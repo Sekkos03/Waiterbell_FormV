@@ -115,11 +115,15 @@ const RequestPage = () => {
       return false;
     }
 
-    const phoneNumber = parsePhoneNumberFromString(formData.phone, 'NO'); // Bruk 'NO' for norske numre
-  if (!phoneNumber || !phoneNumber.isValid()) {
-    setMessage("Vennligst skriv inn et gyldig telefonnummer.");
-    return false;
-  }
+    const phoneNumber = parsePhoneNumberFromString(formData.phone, "NO");
+    if (
+      !phoneNumber ||
+      !phoneNumber.isValid() ||
+      phoneNumber.getType() !== "MOBILE"
+    ) {
+      setMessage("Vennligst skriv inn et gyldig mobilnummer.");
+      return false;
+    }
 
     // reCAPTCHA-bekreftelse
     if (!recaptchaToken) {
