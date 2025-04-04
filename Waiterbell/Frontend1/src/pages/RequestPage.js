@@ -217,8 +217,9 @@ const RequestPage = () => {
               </div>
               <h1>Be om pris</h1>
               <form onSubmit={handleSubmit}>
-                <input type="number" name="numTables" placeholder="Antall bord" value={formData.numTables} onChange={handleChange} required />
-                <input type="number" name="numBells" placeholder="Antall Klokker" value={formData.numBells} onChange={handleChange} required />
+              <input type="number" name="numTables" min="0" placeholder="Antall bord" value={formData.numTables} onChange={handleChange} required />
+              <input type="number" name="numBells" min="0" placeholder="Antall Klokker" value={formData.numBells} onChange={handleChange} required />
+
                 <input type="text" name="firstName" placeholder="Fornavn" value={formData.firstName} onChange={handleChange} required />
                 <input type="text" name="lastName" placeholder="Etternavn" value={formData.lastName} onChange={handleChange} required />
               
@@ -235,8 +236,9 @@ const RequestPage = () => {
                 </div>
 
                 <button type="submit" disabled={submitting}>
-                  <strong>Send</strong>
+                <strong>{submitting ? "Sender..." : "Send"}</strong>
                 </button>
+
                 {message && <p className="message">{message}</p>}
               </form>
             </div>
