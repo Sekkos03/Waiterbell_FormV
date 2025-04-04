@@ -119,7 +119,6 @@ const ConfirmationPage = () => {
               <div className="container">
                 <h2 className="benefits-title">
                   Se fordeler{" "}
-                  <img src={Logo_WB_US} alt="Logo" className="benefits-logo" />
                 </h2>
                 <div className="row mt-5">
                   <div className="col-md-4 benefit-item">
@@ -153,7 +152,6 @@ const ConfirmationPage = () => {
               <div className="container">
                 <h2 className="waiter-bell-title">
                   Waiter Bell leverer til{" "}
-                  <img src={Logo_WB_US} alt="Logo" className="waiter-bell-logo" />
                 </h2>
                 <div className="row mt-5">
                   <div className="col-md-4 category-item">
