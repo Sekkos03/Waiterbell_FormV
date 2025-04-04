@@ -115,6 +115,12 @@ const RequestPage = () => {
       return false;
     }
 
+    const phoneNumber = parsePhoneNumberFromString(formData.phone, 'NO'); // Bruk 'NO' for norske numre
+  if (!phoneNumber || !phoneNumber.isValid()) {
+    setMessage("Vennligst skriv inn et gyldig telefonnummer.");
+    return false;
+  }
+
     // reCAPTCHA-bekreftelse
     if (!recaptchaToken) {
       setMessage("Vennligst bekreft at du ikke er en robot.");
