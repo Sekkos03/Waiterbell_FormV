@@ -21,7 +21,8 @@
   gap: 2rem;
   width: 100%;
   max-width: 1300px;
-  margin-left: -20px;
+  margin-left: -25px;
+  margin-bottom: -19px;
 }
 .confirmation-container {
   display: flex;
