@@ -47,7 +47,7 @@ public class RequestController {
 
       // Send the email notification to the organization's email
       mailService.sendRequestNotification("Sekoukosiah82@gmail.com", subject, body);
-
+      
       return ResponseEntity.ok("Data received and notification sent.");
     }
 }
