@@ -29,7 +29,8 @@
     {
       "src": "apple-touch-icon.svg",
       "type": "image/svg+xml",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any"
     },
     {
       "src": "android-chrome-192x192.png",
