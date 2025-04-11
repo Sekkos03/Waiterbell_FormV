@@ -98,12 +98,14 @@ Explanation .fa-typo3 {
   .nav-menu {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw; /* Full viewport width */
     position: absolute;
-    top: 80px;
+    top: 84px; /* match navbar height */
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
+    margin: 0; /* Remove default spacing */
+    padding: 0; /* Remove default spacing */
   }
 
   .nav-menu.active {
@@ -119,7 +121,6 @@ Explanation .fa-typo3 {
     padding: 2rem;
     width: 100%;
     display: table;
-    
   }
 
   .nav-links:hover {
@@ -156,7 +157,7 @@ Explanation .fa-typo3 {
     text-align: center;
     margin: 2rem auto;
     border-radius: 4px;
-    width: 80%;
+    width: 100%;
     text-decoration: none;
     font-size: 1.5rem;
     background-color: transparent;
