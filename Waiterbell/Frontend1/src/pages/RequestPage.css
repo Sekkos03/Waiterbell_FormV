@@ -200,6 +200,16 @@ html {
   backdrop-filter: blur(4px);
 }
 
+.footer-signature {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #c29b6c;
+  background-color: #0d1015;
+  margin-top: 40px;
+}
+
 /* Responsiv design */
 @media (max-width: 768px) {
     .request-container {

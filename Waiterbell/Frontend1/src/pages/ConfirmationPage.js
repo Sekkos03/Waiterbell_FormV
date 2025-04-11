@@ -4,13 +4,10 @@ import React, { useState } from "react";
 import "./RequestPage.css";
 import "./HomePage.css";
 import logo from "../asset/Logo_WB_US.png";
-import Logo_medT from "../asset/Logo_medT.png";
 import Logo_WB from "../asset/Logo_WB.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./HomePage.css";
-import { useEffect } from "react";
 import "./Navbar.css";
-import { Button } from "./Button2";
 import Logo_WB_US from "../asset/Logo_WB_US.png";
 import Hotell from "../asset/Hotell.jpg";
 import Restaurant from "../asset/restaurant_ordering.jpg";
@@ -230,9 +227,9 @@ const ConfirmationPage = () => {
                   className="contact-logo-img"
                 />
               </div>
+              <div className="footer-signature">© Created by Sekou Kosiah</div>
             </div>
           </section>
-    
     </>
   );
 };

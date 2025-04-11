@@ -379,6 +379,7 @@ const RequestPage = () => {
               className="contact-logo-img"
             />
           </div>
+          <div className="footer-signature">© Created by Sekou Kosiah</div>
         </div>
       </section>
     </>
