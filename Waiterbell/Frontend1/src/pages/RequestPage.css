@@ -219,13 +219,7 @@ html {
       text-align: center;
     }
     .logo-container {
-      transform: scale(1.6);
-      margin: 0 auto;              /* Sentrer horisontalt */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      white-space: normal;
-      margin-bottom: 10px;
+      display: none;
     }
     
   
@@ -242,9 +236,9 @@ html {
     }
   
     .slogan-container h2 {
-      font-size: 3.7rem;
+      font-size: 2.9rem;
       margin: 0;
-      margin-left: 0;
+      margin-left: -15px;
     }
     
 }
