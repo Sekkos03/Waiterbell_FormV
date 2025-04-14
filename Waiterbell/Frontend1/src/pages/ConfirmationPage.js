@@ -210,16 +210,16 @@ const ConfirmationPage = () => {
                   <h3>Stephan Kovac</h3>
                   <p>Daglig leder</p>
                   <p>Tlf: +47 455 10 294</p>
-                  <p className="email-line">E-post: stephan@waiterbell.no</p>
-    
                 </div>
                 <div className="col-md-6 contact-item">
                   <h3>Josef Missoum</h3>
                   <p>Salgssjef</p>
                   <p>Tlf: +47 929 70 458</p>
-                  <p>E-post: josef@waiterbell.no</p>
                 </div>
               </div>
+              <div className="email-line">
+            <p>E-post: stephan@waiterbell.no</p>
+            </div>
               <div className="contact-logo mt-5">
                 <img
                   src={Logo_WB}
