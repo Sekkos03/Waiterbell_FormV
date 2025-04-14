@@ -228,7 +228,7 @@ const RequestPage = () => {
               <h1>Be om pris</h1>
               <form onSubmit={handleSubmit}>
               <input type="number" name="numTables" min="0" placeholder="Antall bord" value={formData.numTables} onChange={handleChange} required />
-              <input type="number" name="numBells" min="0" placeholder="Antall Klokker" value={formData.numBells} onChange={handleChange} required />
+              <input type="number" name="numBells" min="0" placeholder="Antall klokker" value={formData.numBells} onChange={handleChange} required />
 
                 <input type="text" name="firstName" placeholder="Fornavn" value={formData.firstName} onChange={handleChange} required />
                 <input type="text" name="lastName" placeholder="Etternavn" value={formData.lastName} onChange={handleChange} required />
@@ -236,7 +236,7 @@ const RequestPage = () => {
 
                 <input type="tel" name="phone" placeholder="Telefonnummer" value={formData.phone} onChange={handleChange} required />
                 <input type="email" name="email" placeholder="Epost" value={formData.email} onChange={handleChange} required />
-                <input type="text" name="resturantName" placeholder="Firma Navn" value={formData.resturantName} onChange={handleChange} required />
+                <input type="text" name="resturantName" placeholder="Firma navn" value={formData.resturantName} onChange={handleChange} required />
                 <div className="bot">
                 {/* reCAPTCHA-verifisering */}
                 <ReCAPTCHA
