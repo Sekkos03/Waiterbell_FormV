@@ -13,17 +13,33 @@
   padding: 0 20px;
 }
 
+/* hero header above the panel */
+.hero-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  margin-top: -1.5rem;
+}
+
+.hero-header h1 {
+  color: white;
+  font-size: 3rem;      /* same as before */
+  line-height: 1.2;
+  margin: 0;
+}
+
 .request-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   width: 100%;
   max-width: 1300px;
-  margin-left: 68px;
+  margin: 0 auto;
   margin-bottom: -19px;
 }
+
 .confirmation-container {
   display: flex;
   flex-direction: row;
@@ -72,7 +88,7 @@ html {
   transform-origin: center;
   margin: 0 auto;
   margin-left: 1%;
-  margin-right: 100px;
+  margin-right: 20px;
 }
 
 /* Viktig: gjør logoen ikke-klikkbar og usynlig for pekeren */
@@ -96,7 +112,7 @@ html {
 
 
 .form-container h1:first-child {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #ffffff;
   margin-bottom: -10px;
 }
@@ -178,13 +194,14 @@ html {
 
 /* Høyre side - Slagord */
 .slogan-container {
-  flex: 1;
+  flex: 1 1 300px;
   text-align: right;
   font-size: 2rem;
   font-weight: bold;
   color: #c29b6c;
-  margin-left: 60px;
+  margin: 0 auto 0 0;
 }
+
 
 .slogan-container h2 {
   margin: 0;
@@ -213,7 +230,12 @@ html {
   border-radius: 12px; /* Runde kanter */
   font-family: Arial, Helvetica, sans-serif; /* Rett sans-serif font */
 }
-
+.logo-container,
+.form-container,
+.slogan-container {
+  flex: 1 1 300px;
+  min-width: 300px;
+}
 
 /* Responsiv design */
 @media (max-width: 768px) {

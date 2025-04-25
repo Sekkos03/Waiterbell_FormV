@@ -214,6 +214,9 @@ const RequestPage = () => {
       <div className="parent">
       <section className="about-section" id="beompris">
       <div className="request-page">
+      <div className="hero-header">
+    <h1>Great service starts with Waiter Bell</h1>
+  </div>
           <div className="request-container">
   {/* Left Side - Logo */}
   <div className="logo-container">
@@ -223,9 +226,8 @@ const RequestPage = () => {
   {/* Midtdel - Skjema */}
   <div className="form-container">
     <div className="parent">
-              <h1>Great service starts with Waiter Bell</h1>
+    <h1>Be om pris</h1>
               </div>
-              <h1>Be om pris</h1>
               <form onSubmit={handleSubmit}>
               <input type="number" name="numTables" min="0" placeholder="Antall bord" value={formData.numTables} onChange={handleChange} required />
               <input type="number" name="numBells" min="0" placeholder="Antall klokker" value={formData.numBells} onChange={handleChange} required />
